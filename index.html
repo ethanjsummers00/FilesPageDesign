@@ -9,7 +9,11 @@
     </head>
     <body>
         <header>
-            <h1>Filing</h1>            
+            <h1>Filing</h1>
+            <button class="fileTab1" onclick="openBlock('block1')">Main 1</button>
+            <button class="fileTab2" onclick="openBlock('block2')">Main 2</button>
+            <button class="fileTab3" onclick="openBlock('block3')">Main 3</button>
+            <button class="fileTab4" onclick="openBlock('block4')">Main 4</button>             
         </header>
         <nav>
             <ul>
@@ -27,5 +31,32 @@
                 </li>
             </ul>
         </nav>
+
+        <section id="block1" style="display:none" class="block">
+
+        </section>
+
+        <section id="block2" style="display:none" class="block">
+            
+        </section>
+
+        <section id="block3" style="display:none" class="block">
+            
+        </section>
+
+        <section id="block4" style="display:none" class="block">
+            
+        </section>
+
+        <script>
+            function openBlock(blockName) {
+            var i;
+            var x = document.getElementsByClassName("block");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            document.getElementById(blockName).style.display = "block";  
+            }
+            </script>
     </body>
 </html>

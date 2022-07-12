@@ -78,3 +78,39 @@ li {
     font-family: 'Quicksand';
     font-size: 1.75em;
 }
+
+/* .tabSwitch1, .tabSwitch2, .tabSwitch3, .tabSwitch4 {
+
+} */
+
+#block1 {
+    
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: var(--olive);
+}
+
+#block2 {
+    
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: var(--darkTan);
+}
+
+#block3 {
+    
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: var(--beige);
+}
+
+#block4 {
+    
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: var(--lightTan);
+}
