@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;600&display=swap');
 
 /* color variables */
 :root {
@@ -33,15 +33,32 @@ nav {
     width: 25%;
     display: flex;
     justify-content: center;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 50%, 80% 50%, 100% 100%, 0% 100%);
 }
+
+#tab1:hover {
+    clip-path: polygon(20% 25%, 80% 25%, 100% 100%, 0% 100%);
+}
+
+#tab2:hover {
+    clip-path: polygon(20% 25%, 80% 25%, 100% 100%, 0% 100%);
+}
+
+#tab3:hover {
+    clip-path: polygon(20% 25%, 80% 25%, 100% 100%, 0% 100%);
+}
+
+#tab4:hover {
+    clip-path: polygon(20% 25%, 80% 25%, 100% 100%, 0% 100%);
+}
+
 
 #tab2 {
     background: var(--darkTan);
     width: 25%;
     display: flex;
     justify-content: center;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 50%, 80% 50%, 100% 100%, 0% 100%);
 }
 
 #tab3 {
@@ -49,7 +66,7 @@ nav {
     width: 25%;
     display: flex;
     justify-content: center;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 50%, 80% 50%, 100% 100%, 0% 100%);
 }
 
 #tab4 {
@@ -57,13 +74,20 @@ nav {
     width: 25%;
     display: flex;
     justify-content: center;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 50%, 80% 50%, 100% 100%, 0% 100%);
 }
 
 h1 {
     margin: 0 auto;
     font-family: 'Pacifico', cursive;
     font-size: 4em;
+}
+
+p {
+    margin: 0%;
+    padding: 1%;
+    font-family: 'Quicksand';
+    font-size: 1.5em;
 }
 
 ul {
@@ -75,16 +99,28 @@ ul {
 
 li {
     list-style: none;
-    font-family: 'Quicksand';
-    font-size: 1.75em;
+    height: 100px;
 }
 
-/* .tabSwitch1, .tabSwitch2, .tabSwitch3, .tabSwitch4 {
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-family: 'Quicksand';
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-top: 25%;
+    width: 230px;
+}
 
-} */
+li:hover button {
+    margin-top: 0%;
+}
 
 #block1 {
-    
     display: flex;
     width: 100%;
     height: 500px;
@@ -92,7 +128,6 @@ li {
 }
 
 #block2 {
-    
     display: flex;
     width: 100%;
     height: 500px;
@@ -100,7 +135,6 @@ li {
 }
 
 #block3 {
-    
     display: flex;
     width: 100%;
     height: 500px;
@@ -108,7 +142,6 @@ li {
 }
 
 #block4 {
-    
     display: flex;
     width: 100%;
     height: 500px;
