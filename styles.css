@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap');
+
+/* color variables */
+:root {
+    --linkGray: #645e6b;
+    --hoverGray: #868f97;
+    --olive: #4E4216;
+    --darkTan: #8F7759;
+    --beige: #A29780;
+    --lightTan: #BAA782;    
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    margin: 0 2% 0 2%;
+}
+
+header {
+
+}
+
+nav {
+    display: flex;
+    width: 50%;
+    margin-top: 2%;
+}
+
+#tab1 {
+    background: var(--olive);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+#tab2 {
+    background: var(--darkTan);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+#tab3 {
+    background: var(--beige);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+#tab4 {
+    background: var(--lightTan);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+h1 {
+    margin: 0 auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+}
+
+ul {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    font-family: 'Quicksand';
+    font-size: 1.75em;
+}
