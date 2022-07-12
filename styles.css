@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;600&display=swap');
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 /* color variables */
 :root {
     --linkGray: #645e6b;
@@ -34,6 +39,7 @@ nav {
     display: flex;
     justify-content: center;
     clip-path: polygon(20% 50%, 80% 50%, 100% 100%, 0% 100%);
+    transition: clip-path 0.5s;
 }
 
 #tab1:hover {
@@ -59,6 +65,7 @@ nav {
     display: flex;
     justify-content: center;
     clip-path: polygon(20% 50%, 80% 50%, 100% 100%, 0% 100%);
+    transition: clip-path 0.5s;
 }
 
 #tab3 {
@@ -67,6 +74,7 @@ nav {
     display: flex;
     justify-content: center;
     clip-path: polygon(20% 50%, 80% 50%, 100% 100%, 0% 100%);
+    transition: clip-path 0.5s;
 }
 
 #tab4 {
@@ -75,6 +83,7 @@ nav {
     display: flex;
     justify-content: center;
     clip-path: polygon(20% 50%, 80% 50%, 100% 100%, 0% 100%);
+    transition: clip-path 0.5s;
 }
 
 h1 {
@@ -84,12 +93,13 @@ h1 {
     color: #ffffff;
 }
 
-p {
+section p {
     margin: 0%;
     padding: 1%;
     font-family: 'Quicksand';
     font-size: 1.5em;
     color: #ffffff;
+    animation: fadeIn 0.5s;
 }
 
 ul {
@@ -117,6 +127,7 @@ button {
     margin-top: 25%;
     width: 230px;
     color: #ffffff;
+    transition: margin-top 0.5s;
 }
 
 li:hover button {
@@ -149,4 +160,18 @@ li:hover button {
     width: 100%;
     min-height: 500px;
     background-color: var(--lightTan);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
 }
